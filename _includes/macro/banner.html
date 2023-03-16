@@ -1,0 +1,10 @@
+{% macro showBanner( backgroundImage="", bannerTitle="", bannerSubtitle="" )%}
+<div class="h-32" style="background-image: url({{backgroundImage}});">
+  <div
+    class="flex h-full flex-col items-center justify-center bg-gray-900 bg-opacity-80"
+  >
+    <div class="font-bold text-white">{{bannerTitle}}</div>
+    <div class="font-semibold text-white">{{bannerSubtitle}}</div>
+  </div>
+</div>
+{% endmacro %}

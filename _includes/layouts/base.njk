@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome/css/solid.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body
+    x-data="{ scrollFromTop: false }"
+    @scroll.window="window.pageYOffset > 60 ? scrollFromTop = true : scrollFromTop = false"
+  >
+    <div
+      id="root"
+      class="relative flex min-h-screen flex-col bg-background font-Poppins"
+    >
+      {% include './header.html' %} 
+      {{ content | safe }}
+      {% include './footer.html' %}  
+    </div>
+  </body>
+</html>
