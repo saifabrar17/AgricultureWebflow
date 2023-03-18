@@ -7,6 +7,9 @@ layout: 'layouts/base.njk'
 {% import "macro/products.html" as product %}
 {{ product.showProduct('/assets/images/fruits.png', '/assets/images/vegetable.png','Home','My home page sffubtitle') }}
 
+{% import "macro/belief.html" as belief %}
+{{ belief.showBelief('/assets/images/flowers.png') }}
+
 <div class="container mx-auto">
     Home
     <i class="fa-solid fa-hands-holding-child text-red-600"></i>
