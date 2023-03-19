@@ -13,10 +13,10 @@ layout: 'layouts/base.njk'
 {% import "macro/categories.html" as categories %}
 {{ categories.showCategories('/assets/images/broccoli.png') }}
 
-<div class="container mx-auto">
-    Home
-    <i class="fa-solid fa-hands-holding-child text-red-600"></i>
-</div>
+{% import "macro/testimonial.html" as testimonial %}
+{{ testimonial.showTestimonial('/assets/images/broccoli.png') }}
+
+
 
 
 
