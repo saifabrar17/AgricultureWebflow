@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/base.njk'
 ---
-{% import "macro/banner.html" as banner %}
+{# {% import "macro/banner.html" as banner %}
 {{ banner.showBanner('/assets/images/bannerBg.png','Home','My home page sffubtitle') }}
 
 {% import "macro/products.html" as product %}
@@ -14,7 +14,11 @@ layout: 'layouts/base.njk'
 {{ categories.showCategories('/assets/images/broccoli.png') }}
 
 {% import "macro/testimonial.html" as testimonial %}
-{{ testimonial.showTestimonial('/assets/images/broccoli.png') }}
+{{ testimonial.showTestimonial('/assets/images/broccoli.png') }} #}
+
+{% include 'partials/index/hero.html' %}
+{% include 'partials/index/products.html' %}
+{% include 'partials/index/belief.html' %}
 
 
 

@@ -1,7 +1,6 @@
-{% macro showBanner( backgroundImage="", bannerTitle="", bannerSubtitle="" )%}
 <div
   class="cover container mx-auto h-[60vh] bg-cover bg-center bg-no-repeat px-10"
-  style="background-image: url({{backgroundImage}});"
+  style="background-image: url('/assets/images/bannerBg.png');"
 >
   <div class="grid h-full grid-cols-1 content-center gap-4 ">
     <div>
@@ -33,4 +32,3 @@
     </div>
   </div>
 </div>
-{% endmacro %}
