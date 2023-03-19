@@ -1,0 +1,58 @@
+<div class="bg-darkBlue">
+  <div class="container mx-auto py-20">
+    <p class="mb-3 text-base text-center font-Yellowtail text-offGreen md:text-start">
+      Offer
+    </p>
+    <div class="block md:flex justify-between">
+      <div>
+        <p class="text-center text-4xl font-bold text-white md:text-start">
+        We Offer Organic For You
+      </p>
+      </div>
+      <div>
+        <button class="flex gap-3 rounded-md bg-offYellow p-3 text-sm font-semibold mt-3 mx-auto text-darkBlue">
+           View All Product
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="9.5" cy="9.5" r="9.5" fill="#335B6B" />
+              <path
+                d="M9.47641 6.12891L12.871 9.19342L9.47641 12.2579M12.3995 9.19342H5.51611"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-5">
+        <div>
+          <!-- Card 1 -->
+        {% import "macro/productCard.html" as productcard %}
+        {{ productcard.showProductCard('/assets/images/fruits.png', '/assets/images/vegetable.png') }}
+        </div>
+        <div>
+          <!-- Card 2 -->
+        {% import "macro/productCard.html" as productcard %}
+        {{ productcard.showProductCard('/assets/images/fruits.png', '/assets/images/vegetable.png') }}
+        </div>
+        <div>
+          <!-- Card 3 -->
+        {% import "macro/productCard.html" as productcard %}
+        {{ productcard.showProductCard('/assets/images/fruits.png', '/assets/images/vegetable.png') }}
+        </div>
+        <div>
+          <!-- Card 4 -->
+        {% import "macro/productCard.html" as productcard %}
+        {{ productcard.showProductCard('/assets/images/fruits.png', '/assets/images/vegetable.png') }}
+        </div>
+    </div>
+
+  </div>
+</div>

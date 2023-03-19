@@ -1,19 +1,22 @@
-{% macro showTestimonial( backgroundImage1="") %}
-<div class="container mx-auto py-10">
-  <div>
-    <p class="mb-3 text-center font-Yellowtail text-offGreen">
-      Testimonial
+{% macro showProductCard( backgroundImage1="" ) %}
+<div class="bg-white p-5 rounded-md">
+  <div class="mb-5">
+    <p class="mb-2 inline-block rounded-lg bg-darkBlue p-1 text-xs text-white">
+      Vegetable
     </p>
-    <p class="pb-5 text-center text-4xl font-bold text-darkBlue">
-      What Our Customer Saying?
-    </p>
-  </div>
-
-  <div class="flex justify-center">
-    <div>
-      <img src="/assets/images/customer.png" class="mx-auto" alt="" />
-      <!-- SVG -->
-      <div class="flex justify-center gap-1 pt-5">
+    <img
+      src="assets/images/broccoli.png"
+      class="mx-auto max-h-[250px] min-w-[250px] rounded-xl"
+      alt=""
+    />
+    <p class="pt-3 text-lg font-semibold text-darkBlue">Broccoli</p>
+    <hr class="pt-2" />
+    <div class="flex justify-between">
+      <div class="flex gap-3">
+        <p class="text-gray-400 line-through">$28.99</p>
+        <p class="text-base font-semibold text-darkBlue">$25.99</p>
+      </div>
+      <div class="flex gap-1">
         <svg
           width="15"
           height="14"
@@ -79,33 +82,7 @@
           />
         </svg>
       </div>
-
-      <p class="text-center text-[#525C60] pt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
-        aperiam mollitia rem laudantium blanditiis cum deserunt debitis sequi
-        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quis.
-      </p>
-      <p class="text-[#525C60] text-xl font-bold text-center pt-3">Martha Jonas</p>
-      <p class="text-center text-[#525C60] pt-2 pb-5">
-       Consumer
-      </p>
     </div>
   </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-    <div class="p-5 border-2 h-32 w-32 border-[#7EB693] grid grid-cols-1 items-center rounded-full mx-auto">
-        <p class="text-darkBlue text-xs text-center"><span class=" text-2xl">100%</span><br> Organic</p>
-    </div>
-    <div class="p-5 border-2 h-32 w-32 border-[#7EB693] grid grid-cols-1 items-center rounded-full mx-auto">
-        <p class="text-darkBlue text-xs text-center"><span class=" text-2xl">285</span><br> Active Product</p>
-    </div>
-    <div class="p-5 border-2 h-32 w-32 border-[#7EB693] grid grid-cols-1 items-center rounded-full mx-auto">
-        <p class="text-darkBlue text-xs text-center"><span class=" text-2xl">350+</span><br> Organic Product</p>
-    </div>
-    <div class="p-5 border-2 h-32 w-32 border-[#7EB693] grid grid-cols-1 items-center rounded-full mx-auto">
-        <p class="text-darkBlue text-xs text-center"><span class=" text-2xl">25+</span><br> Years Farming</p>
-    </div>
-  </div>
-
 </div>
 {% endmacro %}
