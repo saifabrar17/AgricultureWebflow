@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       colors: {
         background: 'var(--theme-background)',
+        darkBlue: 'var(--bg-darkblue)',
+        offGreen: 'var(--color-offGreen)',
         backgroundVariant: 'var(--theme-backgroundVariant)',
         onBackground: 'var(--theme-on-background)',
         onBackgroundVariant: 'var(--theme-on-backgroundVariant)',

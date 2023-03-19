@@ -26,6 +26,8 @@
 @tailwind utilities;
 @layer base {
   :root {
+    --bg-darkblue: #274C5B;
+    --color-offGreen: #68A47F;
     --theme-background: #ebf1f3;
     --theme-backgroundVariant: #f6fafd;
     --theme-on-background: #474747;
