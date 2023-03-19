@@ -32,6 +32,7 @@ module.exports = {
       },
       fontFamily: {
         Roboto: ['Roboto'],
+        Yellowtail: ['Yellowtail'],
         Lato: ['Lato'],
         Sora: ['Sora'],
         Poppins: ['Poppins'],
