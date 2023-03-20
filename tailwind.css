@@ -3,6 +3,7 @@
 * {
   scrollbar-width: 6px;
   scrollbar-color: var(--theme-primary);
+  font-family: 'Roboto';
 }
 
 /* Chrome, Edge, and Safari */
