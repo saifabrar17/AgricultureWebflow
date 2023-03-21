@@ -1,0 +1,30 @@
+<!-- The menu here -->
+<div
+  id="side-menu"
+  class="fixed top-0 right-[-250px] z-50 flex h-screen w-[240px] flex-col space-y-5 bg-gray-700 p-5 text-white duration-300"
+>
+  <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()"
+    >&times;</a
+  >
+  <a class="hover:text-amber-500" href="#">Home</a>
+  <a class="hover:text-amber-500" href="#">About KindaCode.com</a>
+  <a class="hover:text-amber-500" href="#">Contact Us</a>
+  <a class="hover:text-amber-500" href="#">Terms of Service</a>
+  <a class="hover:text-amber-500" href="#">Privacy Policy</a>
+</div>
+
+<main class="p-5">
+  <span class="cursor-pointer text-4xl" onclick="openMenu()">&#9776;</span>
+</main>
+
+<script>
+  var sideMenu = document.getElementById('side-menu');
+  function openMenu() {
+    sideMenu.classList.remove('right-[-250px]');
+    sideMenu.classList.add('right-0');
+  }
+  function closeMenu() {
+    sideMenu.classList.remove('right-0');
+    sideMenu.classList.add('right-[-250px]');
+  }
+</script>
