@@ -5,6 +5,12 @@
       <img src="../../assets/images/logo/Logo.png" alt="dd" />
     </div>
 
+    <span
+      class="block cursor-pointer text-4xl md:hidden"
+      onclick="openMenuSmall()"
+      >&#9776;</span
+    >
+
     <!-- Menu items -->
     <div class="hidden md:block">
       <ul class="flex h-16 items-center gap-6">
@@ -19,7 +25,7 @@
     </div>
 
     <!-- search bar on large screen -->
-    <div class="hidden md:flex justify-end">
+    <div class="hidden justify-end md:flex">
       <div class="flex gap-2">
         <div class="flex justify-end gap-2 rounded-full bg-[#FAFAFA]">
           <input
@@ -107,14 +113,51 @@
   <p class="font-semibold text-white">No Items in Cart!</p>
 </div>
 
+<!-- SMALL SIDEBAR START -->
+<div
+  id="side-menu-small"
+  class="fixed top-0 left-[-300px] z-50 flex h-screen w-[240px] flex-col space-y-5 bg-gray-700 p-5 text-white duration-300"
+>
+  <a
+    href="javascript:void(0)"
+    class="text-left text-4xl"
+    onclick="closeMenuSmall()"
+    >&times;</a
+  >
+  <ul class="">
+    <!-- <li> <img src="../../assets/images/logo/Logo.png" alt="dd" > </li> -->
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Project</a></li>
+    <li><a href="#">News</a></li>
+  </ul>
+  
+  
+
+</div>
+
+<!-- JAVASCRIPT START -->
+
 <script>
   var sideMenu = document.getElementById('side-menu');
+  var sideMenuSmall = document.getElementById('side-menu-small');
   function openMenu() {
     sideMenu.classList.remove('right-[-250px]');
     sideMenu.classList.add('right-0');
   }
   function closeMenu() {
+    console.log('clicked');
     sideMenu.classList.remove('right-0');
     sideMenu.classList.add('right-[-250px]');
+  }
+  function openMenuSmall() {
+    sideMenuSmall.classList.remove('left-[-300px]');
+    sideMenuSmall.classList.add('left-0');
+  }
+  function closeMenuSmall() {
+    sideMenuSmall.classList.remove('left-0');
+    sideMenuSmall.classList.add('left-[-300px]');
   }
 </script>
