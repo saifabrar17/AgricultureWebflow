@@ -1,0 +1,55 @@
+<button
+  class="mr-1 mb-1 rounded bg-offGreen px-6 py-3 text-sm font-bold uppercase text-white outline-none ease-linear"
+  type="button"
+  onclick="toggleModal('modal-id')"
+>
+  Open modal
+</button>
+<div
+  class="fixed inset-0 z-50 hidden items-center justify-center overflow-y-auto overflow-x-hidden outline-none"
+  id="modal-id"
+>
+  <div class="relative my-6 mx-auto w-auto ">
+    <div
+      class="relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none"
+    >
+      <!-- HEADER -->
+      <div
+        class="flex items-start justify-between rounded-t border-b border-solid border-darkBlue p-5"
+      >
+        <h3 class="text-3xl font-semibold">Modal Title</h3>
+      </div>
+      <!-- BODY -->
+      <div class="relative flex-auto p-6">
+        <p class="my-4 text-lg leading-relaxed text-slate-500">content</p>
+      </div>
+      <!-- FOOTER -->
+      <div
+        class="flex items-center justify-end border-t border-solid border-darkBlue p-6"
+      >
+        <button
+          class="background-transparent mr-1 mb-1 px-6 py-2 text-sm font-bold uppercase outline-none "
+          type="button"
+          onclick="toggleModal('modal-id')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="fixed inset-0 z-40 hidden bg-black opacity-25"
+  id="modal-id-bgLayout"
+></div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+  function toggleModal(modalID) {
+    document.getElementById(modalID).classList.toggle('hidden');
+    document.getElementById(modalID + '-bgLayout').classList.toggle('hidden');
+    document.getElementById(modalID).classList.toggle('flex');
+    document.getElementById(modalID + '-bgLayout').classList.toggle('flex');
+  }
+</script>
