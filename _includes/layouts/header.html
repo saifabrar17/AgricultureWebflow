@@ -5,12 +5,6 @@
       <img src="../../assets/images/logo/Logo.png" alt="dd" />
     </div>
 
-    <span
-      class="block cursor-pointer text-4xl md:hidden"
-      onclick="openMenuSmall()"
-      >&#9776;</span
-    >
-
     <!-- Menu items -->
     <div class="hidden md:block">
       <ul class="flex h-16 items-center gap-6">
@@ -25,13 +19,13 @@
     </div>
 
     <!-- search bar on large screen -->
-    <div class="hidden justify-end md:flex">
+    <div class="flex justify-end">
       <div class="flex gap-2">
         <div class="flex justify-end gap-2 rounded-full bg-[#FAFAFA]">
           <input
             type="text"
             placeholder="search..."
-            class="rounded-[20px] border-0 bg-transparent outline-0 focus:ring-0"
+            class="hidden rounded-[20px] border-0 p-0 bg-transparent outline-0 focus:ring-0 md:block"
           />
           <div class="grid h-full grid-cols-1 content-center">
             <svg
@@ -40,6 +34,7 @@
               viewBox="0 0 57 56"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12"
             >
               <circle cx="28.791" cy="28" r="28" fill="#7EB693" />
               <path
@@ -49,12 +44,13 @@
             </svg>
           </div>
         </div>
+
         <div
           onclick="openMenu()"
           class="flex cursor-pointer gap-2 rounded-full border-2 border-[#E0E0E0] p-1"
         >
           <svg
-            class="grid h-full items-center"
+            class="grid h-full items-center h-12 w-12"
             width="57"
             height="56"
             viewBox="0 0 57 56"
@@ -93,9 +89,18 @@
               stroke-linejoin="round"
             />
           </svg>
-          <p class="grid h-full items-center font-semibold text-darkBlue">
+          <p
+            class="hidden h-full items-center font-semibold text-darkBlue md:grid"
+          >
             Cart (0)
           </p>
+        </div>
+        <div class="grid h-full items-center">
+          <span
+            class="block cursor-pointer text-4xl md:hidden"
+            onclick="openMenuSmall()"
+            >&#9776;</span
+          >
         </div>
       </div>
     </div>
@@ -133,9 +138,6 @@
     <li><a href="#">Project</a></li>
     <li><a href="#">News</a></li>
   </ul>
-  
-  
-
 </div>
 
 <!-- JAVASCRIPT START -->
